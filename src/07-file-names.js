@@ -15,6 +15,23 @@
  */
 function renameFiles(/* names */) {
   throw new Error('Not implemented');
+  /*  const collectionFile = new Set();
+  names.forEach((elem) => {
+    if (!collectionFile.has(elem)) {
+      collectionFile.add(elem);
+    } else {
+      let i = 1;
+      while (true) {
+        const newName = elem + `(${i})`;
+        if (!collectionFile.has(newName)) {
+          collectionFile.add(newName);
+          break;
+        }
+        i++;
+      }
+    }
+  });
+  return [...collectionFile]; */
 }
 
 module.exports = renameFiles;
