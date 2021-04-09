@@ -12,11 +12,11 @@
  */
 function getSumOfDigits(n) {
   let result = n;
-  while (result > 10) {
+  while (result >= 10) {
     const arr = String(result).split('');
     let sum = 0;
     for (let i = 0; i < arr.length; i++) {
-      sum += arr[i];
+      sum += +arr[i];
     }
     result = sum;
   }
