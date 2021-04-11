@@ -19,6 +19,11 @@
 
 function removeKFromList(/* l, k */) {
   throw new Error('Not implemented');
+  /*   console.log(`inner 8`, l, k);
+  return l.reduce((result, elem) => {
+    if (elem !== k) result.push(elem);
+    return result;
+  }, []); */
 }
 
 module.exports = removeKFromList;

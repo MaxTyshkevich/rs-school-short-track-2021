@@ -23,6 +23,18 @@
  */
 function minesweeper(/* matrix */) {
   throw new Error('Not implemented');
+  /*
+  for (let i = 0; i < matrix.length; i++){
+    for (let j = 0; j < matrix[i].length; j++) {
+      let cell = matrix[i][j]; // true/false
+
+      let top = matrix[i - 1][j];
+      let bottom = matrix[i + 1][j];
+      let left = matrix[i][j - 1];
+      let right = matrix[i][j + 1];
+
+    }
+  } */
 }
 
 module.exports = minesweeper;
