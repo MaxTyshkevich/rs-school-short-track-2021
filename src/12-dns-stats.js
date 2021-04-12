@@ -21,17 +21,7 @@
  *
  */
 function getDNSStats(domains) {
-  let main = domains.map((elem) => {
-    console.log(elem);
-    return elem
-      .split('.')
-      .reverse()
-      .map((str, index, arr) => {
-        console.log(arr);
-        console.log(arr.slice(0, index));
-        return `.${arr.slice(0, index + 1).join('.')}`;
-      });
-  });
+  let main = domains.map((elem) => elem.split('.').reverse().map((str, index, arr) => `.${arr.slice(0, index + 1).join('.')}`));
   main = [].concat(...main);
   const result = {};
   for (let i = 0; i < main.length; i++) {
