@@ -20,10 +20,12 @@ function renameFiles(names) {
       collectionFile.add(elem);
     } else {
       let i = 1;
-      while (true) {
+      let toggle = true;
+      while (toggle) {
         const newName = `${elem}(${i})`;
         if (!collectionFile.has(newName)) {
           collectionFile.add(newName);
+          toggle = false;
           break;
         }
         i++;
